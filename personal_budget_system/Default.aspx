@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Personal Budget System" Language="C#" MasterPageFile="~/Site.Master"
-    AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="personal_budget_system._Default" %>
+    AutoEventWireup="true" CodeBehind="Default.aspx.cs"
+    Inherits="personal_budget_system._Default" Async="true" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -211,6 +212,16 @@
                         <asp:Label ID="lblStatus"
                             runat="server"
                             Text="No calculation yet.">
+                        </asp:Label>
+
+                    </div>
+                    <div class="status-box">
+
+                        <h4>AI Budget Recommendation</h4>
+
+                        <asp:Label ID="lblAIAdvice"
+                            runat="server"
+                            Text="Calculate your budget to get an AI recommendation.">
                         </asp:Label>
 
                     </div>
